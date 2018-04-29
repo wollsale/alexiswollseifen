@@ -4,7 +4,11 @@
 * ==========================================
 */
 .experience {
-    margin-bottom: 24rem;
+    margin-bottom: 12rem;
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 24rem;
+    }
 }
 
 

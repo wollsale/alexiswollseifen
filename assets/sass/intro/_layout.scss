@@ -6,7 +6,11 @@
 
 .intro {
     margin-top: 25vh;
-    margin-bottom: 12rem;
+    margin-bottom: 6rem;
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 12rem;
+    }
 
     &__name {
         font-weight: 500;
@@ -17,5 +21,6 @@
         font-weight: 300;
         color: $lightGrey;
         font-size: 2.4rem;
+        line-height: 150%;
     }
 }

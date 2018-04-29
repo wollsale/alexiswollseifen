@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({26:[function(require,module,exports) {
+})({19:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -132,13 +132,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":26}],7:[function(require,module,exports) {
+},{"./bundle-url":19}],6:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\img\\cursor.svg":18,"./..\\img\\arrow.svg":19,"_css_loader":16}],68:[function(require,module,exports) {
+},{"./..\\img\\cursor.svg":17,"./..\\img\\arrow.svg":18,"_css_loader":16}],44:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -160,7 +160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56264' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '57849' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -261,7 +261,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}],69:[function(require,module,exports) {
+},{}],45:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -340,7 +340,7 @@ LazyPromise.prototype.then = function (onSuccess, onError) {
 LazyPromise.prototype.catch = function (onError) {
   return this.promise || (this.promise = new Promise(this.executor).catch(onError));
 };
-},{"./bundle-url":26}],0:[function(require,module,exports) {
-var b=require(69);b.load([["6fa0bebb8ff9e1dd92dbb28fe28103e7.svg",18],["2591dd8e95b8bac4f038561a070144c0.svg",19]]);
-},{}]},{},[68,0])
+},{"./bundle-url":19}],0:[function(require,module,exports) {
+var b=require(45);b.load([["6fa0bebb8ff9e1dd92dbb28fe28103e7.svg",17],["2591dd8e95b8bac4f038561a070144c0.svg",18]]);
+},{}]},{},[44,0])
 //# sourceMappingURL=/dist/1c024a4019f39c0ee74d636757c0f96a.map
