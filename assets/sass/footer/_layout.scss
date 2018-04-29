@@ -14,7 +14,7 @@ footer {
 
         mix-blend-mode: screen;
 
-        color: $lightGrey;
+        color: $black;
         
         letter-spacing: 0.2rem;
         font-size: 1.2rem;
@@ -23,8 +23,19 @@ footer {
         margin-right: 3rem;
         padding: 1rem 0;
 
-        opacity: 0.8;
+        opacity: 0.5;
+        transition: opacity .2s linear;
 
         cursor: url('../img/cursor.svg'), auto;
+
+        &:hover {
+            opacity: 1 !important;
+        }
+    }
+
+    &:hover {
+        .social__link {
+            opacity: .3;
+        }
     }
 }

@@ -52,7 +52,7 @@ const cursorHover = function() {
         element.addEventListener('mouseover', () => {
             MyCursor.pointer.style.transform = 'scale(' + 2 + ')'   
             if (color) MyCursor.pointer.style.backgroundColor = color     
-            if (color) MyCursor.pointer.style.opacity = 1   
+            if (color) MyCursor.pointer.style.opacity = .3
         })
         element.addEventListener('mouseleave', () => {
             MyCursor.pointer.style.transform = 'scale(' + 1 + ')'
