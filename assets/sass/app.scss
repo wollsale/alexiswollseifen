@@ -1,0 +1,51 @@
+:root {
+    font-size: 10px;
+    font-family: 'Acumin pro', 'Arial', 'sans-serif';
+    font-display: swap;
+}
+
+html {
+    cursor: url('../img/cursor.svg'), auto;
+}
+
+/*
+* ==========================================
+* HELPERS & RULES
+* ==========================================
+*/
+
+.bold {
+    font-weight: 700;
+}
+
+$black      : #000000;
+$lightGrey  : #909090;
+
+
+/*
+* ==========================================
+* IMPORT
+* ==========================================
+*/
+
+@import 'intro/layout';
+@import 'experience/layout';
+@import 'footer/layout';
+
+
+/*
+* ==========================================
+* MAIN
+* ==========================================
+*/
+
+.wrapper {
+    max-width: calc((100% / 12) * 8);
+    margin: 0 auto !important;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+

@@ -1,0 +1,21 @@
+/*
+* ==========================================
+* INTRO
+* ==========================================
+*/
+
+.intro {
+    margin-top: 25vh;
+    margin-bottom: 12rem;
+
+    &__name {
+        font-weight: 500;
+        font-size: 3.6rem;
+        margin-bottom: 3rem;        
+    }
+    &__descr {
+        font-weight: 300;
+        color: $lightGrey;
+        font-size: 2.4rem;
+    }
+}

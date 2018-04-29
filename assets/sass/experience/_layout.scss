@@ -1,0 +1,68 @@
+/*
+* ==========================================
+* EXPERIENCE — Layout
+* ==========================================
+*/
+.experience {
+    margin-bottom: 24rem;
+}
+
+
+
+/*
+* ==========================================
+* EXPERIENCE — Style
+* ==========================================
+*/
+
+.experience {
+    font-size: 1.8rem;
+    font-weight: 300;
+    
+    &__item {
+        padding: .5rem 0 0 3rem;
+        margin-bottom: 3rem;
+        border-left: 6px solid rgba($lightGrey, 0);
+
+        &:first-child {
+            border-left: 6px solid rgba($lightGrey, .2);
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__dates {
+        color: $lightGrey;        
+        margin-bottom: 1.5rem;
+        display: flex;
+    }
+    &__date {
+        &:first-of-type {
+            display: flex;
+            align-items: baseline;
+
+            &::after {
+                display: block; content: '';
+                width: 2.3rem; height: 1rem;
+                
+                background-image: url('../img/arrow.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;                
+                
+                margin-left: 2rem; margin-right: 2rem;
+            }
+        }
+    }
+    &__descr {
+        color: $black;        
+        font-style: italic;
+    }
+
+    a { 
+        cursor: url('../img/cursor.svg'), auto;        
+        color: $lightGrey;
+        text-decoration: none;
+    }
+}
