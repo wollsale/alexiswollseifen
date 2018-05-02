@@ -1,0 +1,141 @@
+@charset "UTF-8";
+:root {
+  font-size: 9px;
+  font-family: 'Acumin pro', 'serif', 'sans-serif';
+  font-display: swap; }
+  @media screen and (min-width: 768px) {
+    :root {
+      font-size: 10px; } }
+
+html {
+  cursor: url("cursor.c323988b.svg"), auto; }
+
+/*
+* ==========================================
+* HELPERS & RULES
+* ==========================================
+*/
+.bold {
+  font-weight: 700; }
+
+/*
+* ==========================================
+* IMPORT
+* ==========================================
+*/
+/*
+* ==========================================
+* INTRO
+* ==========================================
+*/
+.intro {
+  margin-top: 25vh;
+  margin-bottom: 6rem; }
+  @media screen and (min-width: 768px) {
+    .intro {
+      margin-bottom: 12rem; } }
+  .intro__name {
+    font-weight: 500;
+    font-size: 3.6rem;
+    margin-bottom: 3rem; }
+  .intro__descr {
+    font-weight: 300;
+    color: #909090;
+    font-size: 2.4rem;
+    line-height: 150%; }
+
+/*
+* ==========================================
+* EXPERIENCE — Layout
+* ==========================================
+*/
+.experience {
+  margin-bottom: 12rem; }
+  @media screen and (min-width: 768px) {
+    .experience {
+      margin-bottom: 24rem; } }
+
+/*
+* ==========================================
+* EXPERIENCE — Style
+* ==========================================
+*/
+.experience {
+  font-size: 1.8rem;
+  font-weight: 300; }
+  .experience__item {
+    padding: .5rem 0 0 3rem;
+    margin-bottom: 3rem;
+    border-left: 6px solid rgba(144, 144, 144, 0); }
+    .experience__item:first-child {
+      border-left: 6px solid rgba(144, 144, 144, 0.2); }
+    .experience__item:last-child {
+      margin-bottom: 0; }
+  .experience__dates {
+    color: #909090;
+    margin-bottom: 1.5rem;
+    display: flex; }
+  .experience__date:first-of-type {
+    display: flex;
+    align-items: baseline; }
+    .experience__date:first-of-type::after {
+      display: block;
+      content: '';
+      width: 2.3rem;
+      height: 1rem;
+      background-image: url("arrow.09197517.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+  .experience__descr {
+    color: #000000;
+    font-style: italic; }
+  .experience a {
+    cursor: url("cursor.c323988b.svg"), auto;
+    color: #909090;
+    text-decoration: none; }
+
+footer {
+  margin-top: auto !important;
+  margin-bottom: 13rem !important; }
+
+.social {
+  display: flex; }
+  .social__link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    mix-blend-mode: screen;
+    color: #000000;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-right: 3rem;
+    padding: 1rem 0;
+    opacity: 0.5;
+    transition: opacity .2s linear;
+    cursor: url("cursor.c323988b.svg"), auto; }
+    .social__link:hover {
+      opacity: 1 !important; }
+  .social:hover .social__link {
+    opacity: .3; }
+
+/*
+* ==========================================
+* MAIN
+* ==========================================
+*/
+.wrapper {
+  max-width: calc(100% - 4rem);
+  margin: 0 auto !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      max-width: calc((100% / 12) * 8); } }
+  @media screen and (min-width: 1024px) {
+    .wrapper {
+      max-width: calc((100% / 12) * 8); } }
