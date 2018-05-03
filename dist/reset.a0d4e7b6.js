@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({29:[function(require,module,exports) {
+})({13:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],17:[function(require,module,exports) {
+},{}],5:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,13 +138,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":29}],27:[function(require,module,exports) {
+},{"./bundle-url":13}],12:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":17}],6:[function(require,module,exports) {
+},{"_css_loader":5}],2:[function(require,module,exports) {
 'use strict';
 
 var _resetCss = require('reset-css');
@@ -152,7 +152,7 @@ var _resetCss = require('reset-css');
 var _resetCss2 = _interopRequireDefault(_resetCss);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"reset-css":27}],31:[function(require,module,exports) {
+},{"reset-css":12}],14:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -182,7 +182,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51190' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '61689' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -321,5 +321,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[31,6])
+},{}]},{},[14,2])
 //# sourceMappingURL=/reset.a0d4e7b6.map

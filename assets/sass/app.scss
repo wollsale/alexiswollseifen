@@ -22,9 +22,6 @@ html {
     font-weight: 700;
 }
 
-$black      : #000000;
-$lightGrey  : #909090;
-
 
 /*
 * ==========================================
@@ -35,6 +32,7 @@ $lightGrey  : #909090;
 @import 'intro/layout';
 @import 'experience/layout';
 @import 'footer/layout';
+@import 'nightmode/layout';
 
 
 /*

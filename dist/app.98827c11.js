@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({23:[function(require,module,exports) {
+})({6:[function(require,module,exports) {
 var MyCursor = {};
 
 var getMouseCoords = function getMouseCoords(e) {
@@ -148,7 +148,7 @@ var cursorHover = function cursorHover() {
 cursorGenerator();
 cursorMouseMove();
 cursorHover();
-},{}],24:[function(require,module,exports) {
+},{}],7:[function(require,module,exports) {
 var socialLinksHovering = function socialLinksHovering() {
 
     var socialLinks = document.querySelectorAll('.social'),
@@ -184,12 +184,43 @@ var socialLinksHovering = function socialLinksHovering() {
 
 socialLinksHovering();
 },{}],8:[function(require,module,exports) {
+var userTime = function userTime() {
+    currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+
+    return hours;
+};
+
+var nightMode = function nightMode() {
+    var night = 21,
+        day = 6,
+        html = document.querySelector('html');
+
+    userTime() >= 21 || userTime() < 6 ? html.classList.add('nightMode') : html.classList.remove('nightMode');
+};
+
+var switchMode = function switchMode() {
+
+    var trigger = document.querySelector('.js-switcher'),
+        html = document.querySelector('html');
+
+    trigger.addEventListener('click', function () {
+        html.classList.contains('nightMode') ? html.classList.remove('nightMode') : html.classList.add('nightMode');
+    });
+};
+
+nightMode();
+switchMode();
+},{}],4:[function(require,module,exports) {
 'use strict';
 
 require('./cursor.js');
 
 require('./socialHovering.js');
-},{"./cursor.js":23,"./socialHovering.js":24}],31:[function(require,module,exports) {
+
+require('./nightMode.js');
+},{"./cursor.js":6,"./socialHovering.js":7,"./nightMode.js":8}],212:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -219,7 +250,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51190' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '61689' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -358,5 +389,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[31,8])
+},{}]},{},[212,4])
 //# sourceMappingURL=/app.98827c11.map

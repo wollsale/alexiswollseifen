@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({29:[function(require,module,exports) {
+})({13:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],17:[function(require,module,exports) {
+},{}],5:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,13 +138,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":29}],7:[function(require,module,exports) {
+},{"./bundle-url":13}],3:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../img/cursor.svg":19,"./../img/arrow.svg":20,"_css_loader":17}],31:[function(require,module,exports) {
+},{"./../img/cursor.svg":9,"./../img/arrow.svg":10,"_css_loader":5}],227:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -174,7 +174,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51190' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '61689' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -313,7 +313,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],33:[function(require,module,exports) {
+},{}],228:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -394,6 +394,6 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":29}],0:[function(require,module,exports) {
-var b=require(33);b.load([["cursor.c323988b.svg",19],["arrow.09197517.svg",20]]);
-},{}]},{},[31,0])
+},{"./bundle-url":13}],0:[function(require,module,exports) {
+var b=require(228);b.load([["cursor.c323988b.svg",9],["arrow.09197517.svg",10]]);
+},{}]},{},[227,0])
