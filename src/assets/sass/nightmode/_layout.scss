@@ -1,0 +1,89 @@
+html {
+    
+    --backgroundColor   : #ffffff;
+    --contentColor      : #000000;
+    --lightContentColor : #909090;
+    --borderColor       : #eeeeee;
+
+    &.nightMode {
+        --backgroundColor   : #171717;
+        --contentColor      : #ffffff;
+        --lightContentColor : #909090;
+        --borderColor       : #262626;
+    }
+
+    color: var(--contentColor);
+    background-color: var(--backgroundColor);
+}
+
+.intro {
+    &__descr {
+        color: var(--lightContentColor);
+    }
+}
+
+.experience {
+    &__date {
+        color: var(--lightContentColor);
+    }
+    &__url {
+        color: var(--lightContentColor);
+    }
+
+    &__item {
+        border-left: 6px solid var(--borderColor);
+
+        &:first-child {
+            border-left: 6px solid var(--borderColor);
+        }
+    }
+}
+
+.social {
+    &__link {
+        color: var(--contentColor);
+    }
+}
+
+
+
+/*
+* ================================================
+* SWITCHER
+* ================================================
+*/
+
+.js-switcher {
+    display: block;
+    width: 4rem; height: 2rem;
+    
+    position: fixed;
+    bottom: 2rem; right: 2rem;
+
+    border: 1px solid var(--contentColor);
+    border-radius: 4rem;
+    opacity: 0.1;
+
+    cursor: url('./assets/images/cursor.svg'), auto;
+    
+    transition: all .3s ease-out;
+
+    &::before {
+        display: block; content: '';
+        width: 1.8rem; height: 1.8rem;
+        background: var(--contentColor);
+        border-radius: 50%;
+        transform: translate(1px, 1px);
+        transition: all .3s ease-out;                    
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    .nightMode & {
+        &::before {
+            transform: translate(2.1rem, 1px);
+        }
+    }
+}

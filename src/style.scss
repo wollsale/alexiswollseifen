@@ -1,0 +1,65 @@
+:root {
+    font-size: 9px;
+    font-family: 'acumin-pro', 'Arial', 'sans-serif';
+    font-display: swap;
+    
+    @media screen and(min-width: 768px) {
+        font-size: 10px;
+    }
+}
+
+html {
+    cursor: url('./assets/images/cursor.svg'), auto;
+}
+
+body {
+    position: relative;
+}
+
+/*
+* ==========================================
+* HELPERS & RULES
+* ==========================================
+*/
+
+.bold {
+    font-weight: 700;
+}
+
+
+/*
+* ==========================================
+* IMPORT
+* ==========================================
+*/
+
+@import 'assets/sass/reset/layout';
+@import 'assets/sass/intro/layout';
+@import 'assets/sass/experience/layout';
+@import 'assets/sass/footer/layout';
+@import 'assets/sass/nightmode/layout';
+
+
+/*
+* ==========================================
+* MAIN
+* ==========================================
+*/
+
+.wrapper {
+    max-width: calc(100% - 4rem);    
+    margin: 0 auto !important;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and(min-width: 768px) {
+        max-width: calc((100% / 12) * 8);
+    }
+    @media screen and(min-width: 1024px) {
+        max-width: calc((100% / 12) * 8);
+    }
+}
+

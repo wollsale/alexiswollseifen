@@ -1,0 +1,64 @@
+/*
+* ==========================================
+* EXPERIENCE — Layout
+* ==========================================
+*/
+.experience {
+    margin-bottom: 12rem;
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 24rem;
+    }
+}
+
+
+
+/*
+* ==========================================
+* EXPERIENCE — Style
+* ==========================================
+*/
+
+.experience {
+    font-size: 1.8rem;
+    font-weight: 300;
+    
+    &__item {
+        padding: .5rem 0 .5rem 3rem;
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__dates {
+        margin-bottom: 1.5rem;
+        display: flex;
+        font-size: 1.2rem; 
+        font-weight: 500;
+    }
+    &__date {
+        &:first-of-type {
+            display: flex;
+            align-items: baseline;
+
+            &::after {
+                display: block; content: '';
+                width: 2.3rem; height: 1rem;
+                
+                background-image: url('./assets/images/arrow.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;                
+                
+                margin-left: 2rem; margin-right: 2rem;
+            }
+        }
+    }
+
+    a { 
+        // cursor: url('../img/cursor.svg'), auto;        
+        text-decoration: none;
+    }
+}
