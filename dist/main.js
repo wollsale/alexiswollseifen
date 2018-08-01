@@ -92,7 +92,7 @@
 
 
 var userTime = function userTime() {
-    currentTime = new Date();
+    var currentTime = new Date();
     var hours = currentTime.getHours();
     var minutes = currentTime.getMinutes();
 
